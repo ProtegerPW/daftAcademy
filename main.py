@@ -10,6 +10,22 @@ def root():
 @app.get('/method')
 def getRequest():
     return {"method": "GET"}
+
+@app.put('method')
+def putRequest():
+    return {"method": "PUT"}
+
+@app.options('method')
+def optionsRequest():
+    return {"method": "OPTIONS"}
+
+@app.delete('method')
+def deleteRequest():
+    return {"method": "DELETE"}
+
+@app.post('method')
+def postRequest():
+    return {"method": "POST"}
     
 
 @app.get("/hello/{name}")
