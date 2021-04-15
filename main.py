@@ -11,19 +11,19 @@ def root():
 def getRequest():
     return {"method": "GET"}
 
-@app.put('method')
+@app.put('/method')
 def putRequest():
     return {"method": "PUT"}
 
-@app.options('method')
+@app.options('/method')
 def optionsRequest():
     return {"method": "OPTIONS"}
 
-@app.delete('method')
+@app.delete('/method')
 def deleteRequest():
     return {"method": "DELETE"}
 
-@app.post('method')
+@app.post('/method')
 def postRequest():
     return {"method": "POST"}
     
