@@ -7,6 +7,11 @@ app.counter = 0
 def root():
     return {"message": "Hello world!"}
 
+@app.get('/method')
+def getRequest():
+    return {"method": "GET"}
+    
+
 @app.get("/hello/{name}")
 def hello_name_view(name: str):
     return f"Hello {name}"
